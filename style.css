@@ -1,0 +1,113 @@
+.overflow{
+    height: 300px;
+    width: 400px;
+    border: 2px solid blue;
+    overflow: scroll;
+}
+.overflow2{
+    height: 300px;
+    width: 400px;
+    border: 2px solid blue;
+    overflow: scroll;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+}
+.outer{
+    background: blue;
+}
+.inner{
+    background: rgb(214, 105, 105);
+    transform: rotate(30deg) scale(.75);
+}
+.transition{
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 20px;
+    background: cyan;
+    transition: all 3s ease 1s;
+}
+.transition:hover{
+    background-color: darkblue;
+    color: white;
+    width: 500px;
+}
+/* This all css is related to flexbox property */
+.container{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.flex{
+    height: 500px;
+    width: 400px;
+    border: 2px solid coral;
+    border-radius: 5px;
+}
+.entertainment{
+   flex: auto;
+}
+.flex h1{
+    text-align: center;
+}
+.gbox{
+    border: 2px solid burlywood;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 150px 150px 1fr 1fr;
+    grid-gap: 20px;
+}
+.calendar ul{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(7,1fr);
+}
+.calendar li{
+    list-style: none;
+    font-size: 1.5em;
+    height: 100px;
+    background-color: rgb(20, 18, 18);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other-month{
+    background-color: darkgrey!important;
+}
+.contain{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.food{
+    border: 3px solid lightgray;
+    border-radius: 30px;
+    margin: 10px;
+    width: 500px;
+}
+.food img{
+    width: 100%;
+}
+@media (max-width:760px) {
+    .contain{
+        background-color: royalblue;
+        flex-direction: column;
+    }
+    .food{
+        width: 450px;
+    }
+}
+@media (min-width:1200px) {
+    .contain{
+        background-color: salmon;
+    }
+}
+
